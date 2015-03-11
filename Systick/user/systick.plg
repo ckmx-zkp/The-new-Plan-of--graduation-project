@@ -1,0 +1,95 @@
+<html>
+<body>
+<pre>
+<h1>礦ision Build Log</h1>
+<h2>Project:</h2>
+E:\毕业设计\硬件模块学习(新方案)\Systick\user\systick.uvproj
+Project File Date:  03/08/2015
+
+<h2>Output:</h2>
+Build target 'Target 1'
+assembling startup_stm32f0xx.s...
+compiling system_stm32f0xx.c...
+compiling stm32f0xx_it.c...
+compiling main.c...
+compiling led.c...
+compiling systick.c...
+compiling adc.c...
+compiling timer.c...
+compiling usart.c...
+compiling stm32f0xx_gpio.c...
+compiling stm32f0xx_rcc.c...
+compiling stm32f0xx_adc.c...
+compiling stm32f0xx_misc.c...
+compiling stm32f0xx_syscfg.c...
+compiling stm32f0xx_tim.c...
+compiling stm32f0xx_usart.c...
+linking...
+Program Size: Code=9380 RO-data=224 RW-data=48 ZI-data=1024  
+".\systick.axf" - 0 Errors, 0 Warning(s).
+Load "E:\\毕业设计\\硬件模块学习(新方案)\\Systick\\user\\systick.axf" 
+Set JLink Project File to "E:\毕业设计\硬件模块学习(新方案)\Systick\user\JLinkSettings.ini"
+* JLink Info: Device "STM32F051R8" selected (64 KB flash, 8 KB RAM).
+ 
+JLink info:
+------------
+DLL: V4.74b, compiled Aug 19 2013 23:26:44
+Firmware: J-Link V9 compiled Dec 19 2014 16:50:53
+Hardware: V9.20
+Feature(s) : GDB, RDI, FlashBP, FlashDL, JFlash 
+ 
+* JLink Info: Found SWD-DP with ID 0x0BB11477
+* JLink Info: FPUnit: 4 code (BP) slots and 0 literal slots
+* JLink Info: Found Cortex-M0 r0p0, Little endian.
+ROMTableAddr = 0xE00FF003
+ 
+Target info:
+------------
+Device: STM32F051R8
+VTarget = 3.295V
+State of Pins: 
+TCK: 0, TDI: 1, TDO: 0, TMS: 1, TRES: 1, TRST: 1
+Hardware-Breakpoints: 4
+Software-Breakpoints: 8192
+Watchpoints:          2
+JTAG speed: 4000 kHz
+ 
+Full Chip Erase Done.
+Programming Done.
+Verify OK.
+Application running ...
+Build target 'Target 1'
+linking...
+Program Size: Code=9380 RO-data=224 RW-data=48 ZI-data=1024  
+".\systick.axf" - 0 Errors, 0 Warning(s).
+Load "E:\\毕业设计\\硬件模块学习(新方案)\\Systick\\user\\systick.axf" 
+Set JLink Project File to "E:\毕业设计\硬件模块学习(新方案)\Systick\user\JLinkSettings.ini"
+* JLink Info: Device "STM32F051R8" selected (64 KB flash, 8 KB RAM).
+ 
+JLink info:
+------------
+DLL: V4.74b, compiled Aug 19 2013 23:26:44
+Firmware: J-Link V9 compiled Dec 19 2014 16:50:53
+Hardware: V9.20
+Feature(s) : GDB, RDI, FlashBP, FlashDL, JFlash 
+ 
+* JLink Info: Found SWD-DP with ID 0x0BB11477
+* JLink Info: FPUnit: 4 code (BP) slots and 0 literal slots
+* JLink Info: Found Cortex-M0 r0p0, Little endian.
+ROMTableAddr = 0xE00FF003
+ 
+Target info:
+------------
+Device: STM32F051R8
+VTarget = 3.296V
+State of Pins: 
+TCK: 0, TDI: 1, TDO: 0, TMS: 1, TRES: 1, TRST: 1
+Hardware-Breakpoints: 4
+Software-Breakpoints: 8192
+Watchpoints:          2
+JTAG speed: 4000 kHz
+ 
+Full Chip Erase Done.
+Programming Done.
+Verify OK.
+Application running ...
