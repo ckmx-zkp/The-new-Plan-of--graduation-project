@@ -442,6 +442,11 @@
               <FileType>1</FileType>
               <FilePath>..\drive\usart.c</FilePath>
             </File>
+            <File>
+              <FileName>mlx90614.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\drive\mlx90614.c</FilePath>
+            </File>
           </Files>
         </Group>
         <Group>

@@ -33,3 +33,4 @@
 .\main.o: ..\drive\systick.h
 .\main.o: ..\drive\adc.h
 .\main.o: ..\drive\timer.h
+.\main.o: ..\drive\mlx90614.h

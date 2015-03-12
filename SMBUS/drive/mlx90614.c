@@ -218,11 +218,12 @@ void SMBus_Init()
     GPIO_InitTypeDef    GPIO_InitStructure;
 
 	/* Enable SMBUS_PORT clocks */
-	RCC_APB2PeriphClockCmd(RCC_APB2Periph_SMBUS_PORT, ENABLE);
-
+		//RCC_APB2PeriphClockCmd(RCC_APB2Periph_SMBUS_PORT, ENABLE);
+		RCC_APB1PeriphClockCmd(RCC_AHBPeriph_GPIOB, ENABLE);
     /*配置SMBUS_SCK、SMBUS_SDA为集电极开漏输出*/
     GPIO_InitStructure.GPIO_Pin = SMBUS_SCK | SMBUS_SDA;
-    GPIO_InitStructure.GPIO_Mode = GPIO_Mode_Out_OD;
+		GPIO_InitStructure.GPIO_Mode = GPIO_Mode_AF;
+    GPIO_InitStructure.GPIO_OType = GPIO_OType_OD;
     GPIO_InitStructure.GPIO_Speed = GPIO_Speed_50MHz;
     GPIO_Init(SMBUS_PORT, &GPIO_InitStructure);
 
