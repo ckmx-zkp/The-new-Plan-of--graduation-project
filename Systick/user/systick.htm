@@ -3,7 +3,7 @@
 <title>Static Call Graph - [.\systick.axf]</title></head>
 <body><HR>
 <H1>Static Call Graph for image .\systick.axf</H1><HR>
-<BR><P>#&#060CALLGRAPH&#062# ARM Linker, 5.03 [Build 76]: Last Updated: Thu Mar 12 12:23:40 2015
+<BR><P>#&#060CALLGRAPH&#062# ARM Linker, 5.03 [Build 76]: Last Updated: Thu Mar 12 13:02:45 2015
 <BR><P>
 <H3>Maximum Stack Usage =        140 bytes + Unknown(Cycles, Untraceable Function Pointers)</H3><H3>
 Call chain for Maximum Stack Depth:</H3>
@@ -263,10 +263,11 @@ Global Symbols
 <BR>[Called By]<UL><LI><a href="#[23]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
 </UL>
 
-<P><STRONG><a name="[16]"></a>TIM3_IRQHandler</STRONG> (Thumb, 86 bytes, Stack size 8 bytes, timer.o(.text))
+<P><STRONG><a name="[16]"></a>TIM3_IRQHandler</STRONG> (Thumb, 156 bytes, Stack size 8 bytes, timer.o(.text))
 <BR><BR>[Stack]<UL><LI>Max Depth = 32<LI>Call Chain = TIM3_IRQHandler &rArr; __2printf
 </UL>
 <BR>[Calls]<UL><LI><a href="#[41]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TIM_GetITStatus
+<LI><a href="#[40]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TIM_Cmd
 <LI><a href="#[42]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TIM_ClearITPendingBit
 <LI><a href="#[43]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ADC_StartOfConversion
 <LI><a href="#[44]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ADC_GetConversionValue
@@ -590,7 +591,8 @@ Global Symbols
 <P><STRONG><a name="[bf]"></a>TIM_SetClockDivision</STRONG> (Thumb, 16 bytes, Stack size 0 bytes, stm32f0xx_tim.o(.text), UNUSED)
 
 <P><STRONG><a name="[40]"></a>TIM_Cmd</STRONG> (Thumb, 26 bytes, Stack size 0 bytes, stm32f0xx_tim.o(.text))
-<BR><BR>[Called By]<UL><LI><a href="#[31]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TIMER_Config
+<BR><BR>[Called By]<UL><LI><a href="#[16]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TIM3_IRQHandler
+<LI><a href="#[31]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TIMER_Config
 </UL>
 
 <P><STRONG><a name="[c0]"></a>TIM_BDTRConfig</STRONG> (Thumb, 32 bytes, Stack size 0 bytes, stm32f0xx_tim.o(.text), UNUSED)
