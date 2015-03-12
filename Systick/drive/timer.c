@@ -64,8 +64,8 @@ void TIM3_IRQHandler(void)
 				//Delay_ms(100);
 				for(count_2 = 0; count_2 < 50; count_2++)
 				{
-						printf("The value is %d\n",ADC_Test);
-						Delay_ms(500);
+						printf("The value is %d\n",ADC_Test[count_2]);
+						//Delay_ms(500);
 				}
 				TIM_Cmd(TIM3, DISABLE);
 		}
