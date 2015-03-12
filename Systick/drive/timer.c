@@ -17,8 +17,8 @@ void TIMER_Config(void)
     //PrescalerValue = (uint16_t) (SystemCoreClock  / 1000) - 1;//1KHz,1ms
 
     /* Time 定时器基础设置 */
-    TIM_TimeBaseStructure.TIM_Period = 375;
-    TIM_TimeBaseStructure.TIM_Prescaler = 10;
+    TIM_TimeBaseStructure.TIM_Period = 3750;
+    TIM_TimeBaseStructure.TIM_Prescaler = 1000;
     TIM_TimeBaseStructure.TIM_ClockDivision = 0;
     TIM_TimeBaseStructure.TIM_CounterMode = TIM_CounterMode_Up;
 
