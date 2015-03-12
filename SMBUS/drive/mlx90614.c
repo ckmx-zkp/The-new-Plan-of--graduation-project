@@ -8,7 +8,8 @@
 
 /* Includes ------------------------------------------------------------------*/
 #include "mlx90614.h"
-#include "lcd12832.h"
+//#include "lcd12832.h"
+
 
 /* Private typedef -----------------------------------------------------------*/
 /* Private define ------------------------------------------------------------*/
@@ -23,7 +24,7 @@
 #define SMBUS_SCK		GPIO_Pin_6
 #define SMBUS_SDA		GPIO_Pin_7
 
-#define RCC_APB2Periph_SMBUS_PORT		RCC_APB2Periph_GPIOB
+//#define RCC_APB2Periph_SMBUS_PORT		RCC_APB2Periph_GPIOB
 
 #define SMBUS_SCK_H()	    SMBUS_PORT->BSRR = SMBUS_SCK
 #define SMBUS_SCK_L()	    SMBUS_PORT->BRR = SMBUS_SCK
@@ -81,11 +82,11 @@ void SMBus_StopBit(void)
 * Output         : None
 * Return         : None
 *******************************************************************************/
-u8 SMBus_SendByte(u8 Tx_buffer)
+uint8_t SMBus_SendByte(uint8_t Tx_buffer)
 {
-    u8	Bit_counter;
-    u8	Ack_bit;
-    u8	bit_out;
+    uint8_t	Bit_counter;
+    uint8_t	Ack_bit;
+    uint8_t	bit_out;
 
     for(Bit_counter=8; Bit_counter; Bit_counter--)
     {
@@ -112,7 +113,7 @@ u8 SMBus_SendByte(u8 Tx_buffer)
 * Output         : None
 * Return         : None
 *******************************************************************************/
-void SMBus_SendBit(u8 bit_out)
+void SMBus_SendBit(uint8_t bit_out)
 {
     if(bit_out==0)
     {
@@ -138,9 +139,9 @@ void SMBus_SendBit(u8 bit_out)
 * Output         : None
 * Return         : Ack_bit
 *******************************************************************************/
-u8 SMBus_ReceiveBit(void)
+uint8_t SMBus_ReceiveBit(void)
 {
-    u8 Ack_bit;
+    uint8_t Ack_bit;
 
     SMBUS_SDA_H();          //引脚靠外部电阻上拉，当作输入
 	SMBus_Delay(2);			// High Level of Clock Pulse
@@ -167,10 +168,10 @@ u8 SMBus_ReceiveBit(void)
 * Output         : None
 * Return         : RX_buffer
 *******************************************************************************/
-u8 SMBus_ReceiveByte(u8 ack_nack)
+uint8_t SMBus_ReceiveByte(uint8_t ack_nack)
 {
-    u8 	RX_buffer;
-    u8	Bit_Counter;
+    uint8_t 	RX_buffer;
+    uint8_t	Bit_Counter;
 
     for(Bit_Counter=8; Bit_Counter; Bit_Counter--)
     {
@@ -196,9 +197,9 @@ u8 SMBus_ReceiveByte(u8 ack_nack)
 * Output         : None
 * Return         : None
 *******************************************************************************/
-void SMBus_Delay(u16 time)
+void SMBus_Delay(uint16_t time)
 {
-    u16 i, j;
+    uint16_t i, j;
     for (i=0; i<4; i++)
     {
         for (j=0; j<time; j++);
@@ -236,15 +237,15 @@ void SMBus_Init()
  * Output         : None
  * Return         : Data
 *******************************************************************************/
-u16 SMBus_ReadMemory(u8 slaveAddress, u8 command)
+uint16_t SMBus_ReadMemory(uint8_t slaveAddress, uint8_t command)
 {
-    u16 data;			// Data storage (DataH:DataL)
-    u8 Pec;				// PEC byte storage
-    u8 DataL=0;			// Low data byte storage
-    u8 DataH=0;			// High data byte storage
-    u8 arr[6];			// Buffer for the sent bytes
-    u8 PecReg;			// Calculated PEC byte storage
-    u8 ErrorCounter;	// Defines the number of the attempts for communication with MLX90614
+    uint16_t data;			// Data storage (DataH:DataL)
+    uint8_t Pec;				// PEC byte storage
+    uint8_t DataL=0;			// Low data byte storage
+    uint8_t DataH=0;			// High data byte storage
+    uint8_t arr[6];			// Buffer for the sent bytes
+    uint8_t PecReg;			// Calculated PEC byte storage
+    uint8_t ErrorCounter;	// Defines the number of the attempts for communication with MLX90614
 
     ErrorCounter=0x00;				// Initialising of ErrorCounter
 	slaveAddress <<= 1;	//2-7位表示从机地址
@@ -301,14 +302,14 @@ repeat:
 * Output         : None
 * Return         : pec[0]-this byte contains calculated crc value
 *******************************************************************************/
-u8 PEC_Calculation(u8 pec[])
+uint8_t PEC_Calculation(uint8_t pec[])
 {
-    u8 	crc[6];
-    u8	BitPosition=47;
-    u8	shift;
-    u8	i;
-    u8	j;
-    u8	temp;
+    uint8_t 	crc[6];
+    uint8_t	BitPosition=47;
+    uint8_t	shift;
+    uint8_t	i;
+    uint8_t	j;
+    uint8_t	temp;
 
     do
     {

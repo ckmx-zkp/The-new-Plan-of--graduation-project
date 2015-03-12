@@ -21,18 +21,7 @@ int main(void)
 		ADC_Configuration();
 		printf(" ADC已初始化\n");
 		TIMER_Config();
-		//printf("定时器初始化成功\n");
-		
-		//printf(" ADC已初始化\n");
-		while (1)
 		{    
-				
-//				Value_temp = ADC_GetConversionValue(ADC1);
-//				count_1 = (Value_temp * 3300)/4096;
-//				printf("%d\n",count_1);
-//				//ADC_Value[count_1] = Value_temp;
-//				//USART1_SendString(ADC_Value);
-//				Delay_ms(500);
 		}
 }
 
