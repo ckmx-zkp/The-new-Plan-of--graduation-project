@@ -8,9 +8,6 @@
 
 /* Includes ------------------------------------------------------------------*/
 #include "mlx90614.h"
-//#include "lcd12832.h"
-
-
 /* Private typedef -----------------------------------------------------------*/
 /* Private define ------------------------------------------------------------*/
 #define ACK	 0
@@ -24,7 +21,7 @@
 #define SMBUS_SCK		GPIO_Pin_6
 #define SMBUS_SDA		GPIO_Pin_7
 
-//#define RCC_APB2Periph_SMBUS_PORT		RCC_APB2Periph_GPIOB
+#define RCC_APB2Periph_SMBUS_PORT		RCC_APB2Periph_GPIOB
 
 #define SMBUS_SCK_H()	    SMBUS_PORT->BSRR = SMBUS_SCK
 #define SMBUS_SCK_L()	    SMBUS_PORT->BRR = SMBUS_SCK
@@ -218,10 +215,11 @@ void SMBus_Init()
     GPIO_InitTypeDef    GPIO_InitStructure;
 
 	/* Enable SMBUS_PORT clocks */
-		//RCC_APB2PeriphClockCmd(RCC_APB2Periph_SMBUS_PORT, ENABLE);
 		RCC_APB1PeriphClockCmd(RCC_AHBPeriph_GPIOB, ENABLE);
+
     /*配置SMBUS_SCK、SMBUS_SDA为集电极开漏输出*/
     GPIO_InitStructure.GPIO_Pin = SMBUS_SCK | SMBUS_SDA;
+    //GPIO_InitStructure.GPIO_Type = GPIO_Mode_Out_OD;
 		GPIO_InitStructure.GPIO_Mode = GPIO_Mode_AF;
     GPIO_InitStructure.GPIO_OType = GPIO_OType_OD;
     GPIO_InitStructure.GPIO_Speed = GPIO_Speed_50MHz;
@@ -391,5 +389,4 @@ float SMBus_ReadTemp(void)
 	temp = SMBus_ReadMemory(SA, RAM_ACCESS|RAM_TOBJ1)*0.02-273.15;
 	return temp;
 }
-
 /*********************************END OF FILE*********************************/
