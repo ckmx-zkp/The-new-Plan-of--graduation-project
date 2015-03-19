@@ -38,7 +38,7 @@ Section Cross References
     usart.o(.text) refers to stm32f0xx_rcc.o(.text) for RCC_AHBPeriphClockCmd
     usart.o(.text) refers to stm32f0xx_gpio.o(.text) for GPIO_PinAFConfig
     usart.o(.text) refers to stm32f0xx_misc.o(.text) for NVIC_Init
-    mlx90614.o(.text) refers to stm32f0xx_rcc.o(.text) for RCC_APB1PeriphClockCmd
+    mlx90614.o(.text) refers to stm32f0xx_rcc.o(.text) for RCC_AHBPeriphClockCmd
     mlx90614.o(.text) refers to stm32f0xx_gpio.o(.text) for GPIO_Init
     mlx90614.o(.text) refers to dfltui.o(.text) for __aeabi_ui2d
     mlx90614.o(.text) refers to dmul.o(.text) for __aeabi_dmul

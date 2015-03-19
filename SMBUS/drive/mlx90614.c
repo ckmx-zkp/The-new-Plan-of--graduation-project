@@ -215,7 +215,7 @@ void SMBus_Init()
     GPIO_InitTypeDef    GPIO_InitStructure;
 
 	/* Enable SMBUS_PORT clocks */
-		RCC_APB1PeriphClockCmd(RCC_AHBPeriph_GPIOB, ENABLE);
+		RCC_AHBPeriphClockCmd(RCC_AHBPeriph_GPIOB, ENABLE);
 
     /*配置SMBUS_SCK、SMBUS_SDA为集电极开漏输出*/
     GPIO_InitStructure.GPIO_Pin = SMBUS_SCK | SMBUS_SDA;
