@@ -12,14 +12,14 @@
 /* Private define ------------------------------------------------------------*/
 #define ACK	 0
 #define	NACK 1
-#define SA				0x00 //Slave address 单个MLX90614时地址为0x00,多个时地址默认为0x5a
-#define RAM_ACCESS		0x00 //RAM access command
-#define EEPROM_ACCESS	0x20 //EEPROM access command
-#define RAM_TOBJ1		0x07 //To1 address in the eeprom
+#define SA							0x00 //Slave address 单个MLX90614时地址为0x00,多个时地址默认为0x5a
+#define RAM_ACCESS			0x00 //RAM access command
+#define EEPROM_ACCESS		0x20 //EEPROM access command
+#define RAM_TOBJ1				0x07 //To1 address in the eeprom
 
 #define SMBUS_PORT	    GPIOB
-#define SMBUS_SCK		GPIO_Pin_6
-#define SMBUS_SDA		GPIO_Pin_7
+#define SMBUS_SCK				GPIO_Pin_6	//((uint16_t)0x0040) 
+#define SMBUS_SDA				GPIO_Pin_7	//((uint16_t)0x0080) 
 
 #define RCC_APB2Periph_SMBUS_PORT		RCC_APB2Periph_GPIOB
 
@@ -125,7 +125,7 @@ void SMBus_SendBit(uint8_t bit_out)
     SMBus_Delay(6);					// High Level of Clock Pulse
     SMBUS_SCK_L();					// Clear SCL line
     SMBus_Delay(3);					// Low Level of Clock Pulse
-//	SMBUS_SDA_H();				    // Master release SDA line ,
+	//SMBUS_SDA_H();				    // Master release SDA line ,
     return;
 }
 
@@ -197,7 +197,7 @@ uint8_t SMBus_ReceiveByte(uint8_t ack_nack)
 void SMBus_Delay(uint16_t time)
 {
     uint16_t i, j;
-    for (i=0; i<4; i++)
+    for (i=0; i<5; i++)
     {
         for (j=0; j<time; j++);
     }
@@ -220,7 +220,7 @@ void SMBus_Init()
     /*配置SMBUS_SCK、SMBUS_SDA为集电极开漏输出*/
     GPIO_InitStructure.GPIO_Pin = SMBUS_SCK | SMBUS_SDA;
     //GPIO_InitStructure.GPIO_Type = GPIO_Mode_Out_OD;
-		GPIO_InitStructure.GPIO_Mode = GPIO_Mode_AF;
+	//	GPIO_InitStructure.GPIO_Mode = GPIO_Mode_AF;
     GPIO_InitStructure.GPIO_OType = GPIO_OType_OD;
     GPIO_InitStructure.GPIO_Speed = GPIO_Speed_50MHz;
     GPIO_Init(SMBUS_PORT, &GPIO_InitStructure);

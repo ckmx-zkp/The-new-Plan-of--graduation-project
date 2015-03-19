@@ -1,0 +1,5 @@
+-c --cpu Cortex-M0 -D__MICROLIB -g -O0 --apcs=interwork -I..\user -I..\stm32f0 -I..\drive -I..\lib\inc -I..\lib\src
+-I F:\Keil\ARM\RV31\INC
+-I F:\Keil\ARM\CMSIS\Include
+-I F:\Keil\ARM\Inc\ST\STM32F0xx
+-DUSE_STDPERIPH_DRIVER -DSTM32F0XX -o .\systick.o --omf_browse .\systick.crf --depend .\systick.d "..\drive\systick.c"
