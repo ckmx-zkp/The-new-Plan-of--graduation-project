@@ -11,6 +11,7 @@ unsigned char adc_sig = 0;  //读ADC标志位
 // 输入        : None
 // 输出        : None
 // 返回        : None
+// 备注				 : 开启PB0(通道8)作为AD转换的通道
 //***************************************************************************
 void ADC_Configuration(void)
 {

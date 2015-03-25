@@ -447,6 +447,11 @@
               <FileType>1</FileType>
               <FilePath>..\drive\mlx90614.c</FilePath>
             </File>
+            <File>
+              <FileName>key.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\drive\key.c</FilePath>
+            </File>
           </Files>
         </Group>
         <Group>

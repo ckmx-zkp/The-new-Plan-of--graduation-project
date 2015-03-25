@@ -5,14 +5,16 @@ void KEY_Init(void)
 {
 	
 	GPIO_InitTypeDef GPIO_InitStruct;
-	RCC_AHBPeriphClockCmd(RCC_AHBPeriph_GPIOF, ENABLE);
-  GPIO_InitStruct.GPIO_Pin = GPIO_Pin_7|GPIO_Pin_6 ;
+	
+	RCC_AHBPeriphClockCmd(RCC_AHBPeriph_GPIOA, ENABLE);
+	
+  GPIO_InitStruct.GPIO_Pin = GPIO_Pin_7 | GPIO_Pin_6 | GPIO_Pin_5 ;
   GPIO_InitStruct.GPIO_Mode = GPIO_Mode_IN;
   GPIO_InitStruct.GPIO_Speed = GPIO_Speed_Level_2;
   GPIO_InitStruct.GPIO_PuPd = GPIO_PuPd_UP;
   GPIO_Init(GPIOA, &GPIO_InitStruct);
 	
-	GPIO_SetBits(GPIOF, GPIO_Pin_7| GPIO_Pin_6 );
+	GPIO_SetBits(GPIOA, GPIO_Pin_7| GPIO_Pin_6 );
 	
 	}
 	

@@ -2,4 +2,4 @@
 -I F:\Keil\ARM\RV31\INC
 -I F:\Keil\ARM\CMSIS\Include
 -I F:\Keil\ARM\Inc\ST\STM32F0xx
--DUSE_STDPERIPH_DRIVER -DSTM32F0XX -o .\mlx90614.o --omf_browse .\mlx90614.crf --depend .\mlx90614.d "..\drive\mlx90614.c"
+-DUSE_STDPERIPH_DRIVER -DSTM32F0XX -o .\key.o --omf_browse .\key.crf --depend .\key.d "..\drive\key.c"
