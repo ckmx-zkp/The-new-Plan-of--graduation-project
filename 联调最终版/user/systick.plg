@@ -7,233 +7,11 @@ E:\毕业设计\硬件模块学习(新方案)\GITHUB\The-new-Plan-of--graduation-project\联调
 Project File Date:  04/12/2015
 
 <h2>Output:</h2>
-compiling timer.c...
-"..\drive\timer.c" - 0 Errors, 0 Warning(s).
-compiling timer.c...
-"..\drive\timer.c" - 0 Errors, 0 Warning(s).
 Build target 'Target 1'
-linking...
-Program Size: Code=14072 RO-data=224 RW-data=68 ZI-data=2068  
-".\systick.axf" - 0 Errors, 0 Warning(s).
-Rebuild target 'Target 1'
-assembling startup_stm32f0xx.s...
-compiling system_stm32f0xx.c...
-compiling stm32f0xx_it.c...
-compiling main.c...
-".\systick.axf" - 0 Errors, 0 Warning(s).
-Project build/rebuild aborted.
-Build target 'Target 1'
-linking...
-Program Size: Code=14072 RO-data=224 RW-data=68 ZI-data=2068  
-".\systick.axf" - 0 Errors, 0 Warning(s).
-Load "E:\\毕业设计\\硬件模块学习(新方案)\\GITHUB\\The-new-Plan-of--graduation-project\\联调最终版\\user\\systick.axf" 
-Set JLink Project File to "E:\毕业设计\硬件模块学习(新方案)\GITHUB\The-new-Plan-of--graduation-project\联调最终版\user\JLinkSettings.ini"
-* JLink Info: Device "STM32F051R8" selected (64 KB flash, 8 KB RAM).
- 
-JLink info:
-------------
-DLL: V4.74b, compiled Aug 19 2013 23:26:44
-Firmware: J-Link V9 compiled Dec 19 2014 16:50:53
-Hardware: V9.20
-Feature(s) : GDB, RDI, FlashBP, FlashDL, JFlash 
- 
-* JLink Info: Found SWD-DP with ID 0x0BB11477
-* JLink Info: FPUnit: 4 code (BP) slots and 0 literal slots
-* JLink Info: Found Cortex-M0 r0p0, Little endian.
-ROMTableAddr = 0xE00FF003
- 
-Target info:
-------------
-Device: STM32F051R8
-VTarget = 3.293V
-State of Pins: 
-TCK: 0, TDI: 1, TDO: 0, TMS: 1, TRES: 1, TRST: 1
-Hardware-Breakpoints: 4
-Software-Breakpoints: 8192
-Watchpoints:          2
-JTAG speed: 4000 kHz
- 
-Full Chip Erase Done.
-Programming Done.
-Verify OK.
-Application running ...
-Build target 'Target 1'
-compiling main.c...
-linking...
-Program Size: Code=14220 RO-data=224 RW-data=68 ZI-data=2068  
-".\systick.axf" - 0 Errors, 0 Warning(s).
-Load "E:\\毕业设计\\硬件模块学习(新方案)\\GITHUB\\The-new-Plan-of--graduation-project\\联调最终版\\user\\systick.axf" 
-Set JLink Project File to "E:\毕业设计\硬件模块学习(新方案)\GITHUB\The-new-Plan-of--graduation-project\联调最终版\user\JLinkSettings.ini"
-* JLink Info: Device "STM32F051R8" selected (64 KB flash, 8 KB RAM).
- 
-JLink info:
-------------
-DLL: V4.74b, compiled Aug 19 2013 23:26:44
-Firmware: J-Link V9 compiled Dec 19 2014 16:50:53
-Hardware: V9.20
-Feature(s) : GDB, RDI, FlashBP, FlashDL, JFlash 
- 
-* JLink Info: Found SWD-DP with ID 0x0BB11477
-* JLink Info: FPUnit: 4 code (BP) slots and 0 literal slots
-* JLink Info: Found Cortex-M0 r0p0, Little endian.
-ROMTableAddr = 0xE00FF003
- 
-Target info:
-------------
-Device: STM32F051R8
-VTarget = 3.296V
-State of Pins: 
-TCK: 0, TDI: 1, TDO: 0, TMS: 1, TRES: 1, TRST: 1
-Hardware-Breakpoints: 4
-Software-Breakpoints: 8192
-Watchpoints:          2
-JTAG speed: 4000 kHz
- 
-Full Chip Erase Done.
-Programming Done.
-Verify OK.
-Application running ...
-compiling timer.c...
-"..\drive\timer.c" - 0 Errors, 0 Warning(s).
-Build target 'Target 1'
-compiling main.c...
-linking...
-Program Size: Code=9588 RO-data=224 RW-data=56 ZI-data=6168  
-".\systick.axf" - 0 Errors, 0 Warning(s).
-Build target 'Target 1'
-linking...
-Program Size: Code=9588 RO-data=224 RW-data=56 ZI-data=6168  
-".\systick.axf" - 0 Errors, 0 Warning(s).
-Load "E:\\毕业设计\\硬件模块学习(新方案)\\GITHUB\\The-new-Plan-of--graduation-project\\联调最终版\\user\\systick.axf" 
-Set JLink Project File to "E:\毕业设计\硬件模块学习(新方案)\GITHUB\The-new-Plan-of--graduation-project\联调最终版\user\JLinkSettings.ini"
-* JLink Info: Device "STM32F051R8" selected (64 KB flash, 8 KB RAM).
- 
-JLink info:
-------------
-DLL: V4.74b, compiled Aug 19 2013 23:26:44
-Firmware: J-Link V9 compiled Dec 19 2014 16:50:53
-Hardware: V9.20
-Feature(s) : GDB, RDI, FlashBP, FlashDL, JFlash 
- 
-* JLink Info: Found SWD-DP with ID 0x0BB11477
-* JLink Info: FPUnit: 4 code (BP) slots and 0 literal slots
-* JLink Info: Found Cortex-M0 r0p0, Little endian.
-ROMTableAddr = 0xE00FF003
- 
-Target info:
-------------
-Device: STM32F051R8
-VTarget = 3.293V
-State of Pins: 
-TCK: 0, TDI: 1, TDO: 0, TMS: 1, TRES: 1, TRST: 1
-Hardware-Breakpoints: 4
-Software-Breakpoints: 8192
-Watchpoints:          2
-JTAG speed: 4000 kHz
- 
-Full Chip Erase Done.
-Programming Done.
-Verify OK.
-Application running ...
-compiling timer.c...
-"..\drive\timer.c" - 0 Errors, 0 Warning(s).
-Build target 'Target 1'
-linking...
-Program Size: Code=9588 RO-data=224 RW-data=56 ZI-data=6168  
-".\systick.axf" - 0 Errors, 0 Warning(s).
-Load "E:\\毕业设计\\硬件模块学习(新方案)\\GITHUB\\The-new-Plan-of--graduation-project\\联调最终版\\user\\systick.axf" 
-Set JLink Project File to "E:\毕业设计\硬件模块学习(新方案)\GITHUB\The-new-Plan-of--graduation-project\联调最终版\user\JLinkSettings.ini"
-* JLink Info: Device "STM32F051R8" selected (64 KB flash, 8 KB RAM).
- 
-JLink info:
-------------
-DLL: V4.74b, compiled Aug 19 2013 23:26:44
-Firmware: J-Link V9 compiled Dec 19 2014 16:50:53
-Hardware: V9.20
-Feature(s) : GDB, RDI, FlashBP, FlashDL, JFlash 
- 
-* JLink Info: Found SWD-DP with ID 0x0BB11477
-* JLink Info: FPUnit: 4 code (BP) slots and 0 literal slots
-* JLink Info: Found Cortex-M0 r0p0, Little endian.
-ROMTableAddr = 0xE00FF003
- 
-Target info:
-------------
-Device: STM32F051R8
-VTarget = 3.293V
-State of Pins: 
-TCK: 0, TDI: 1, TDO: 0, TMS: 1, TRES: 1, TRST: 1
-Hardware-Breakpoints: 4
-Software-Breakpoints: 8192
-Watchpoints:          2
-JTAG speed: 4000 kHz
- 
-Full Chip Erase Done.
-Programming Done.
-Verify OK.
-Application running ...
-Build target 'Target 1'
-compiling main.c...
-compiling timer.c...
-linking...
-Program Size: Code=9588 RO-data=224 RW-data=56 ZI-data=6168  
-".\systick.axf" - 0 Errors, 0 Warning(s).
-Load "E:\\毕业设计\\硬件模块学习(新方案)\\GITHUB\\The-new-Plan-of--graduation-project\\联调最终版\\user\\systick.axf" 
-Set JLink Project File to "E:\毕业设计\硬件模块学习(新方案)\GITHUB\The-new-Plan-of--graduation-project\联调最终版\user\JLinkSettings.ini"
-* JLink Info: Device "STM32F051R8" selected (64 KB flash, 8 KB RAM).
- 
-JLink info:
-------------
-DLL: V4.74b, compiled Aug 19 2013 23:26:44
-Firmware: J-Link V9 compiled Dec 19 2014 16:50:53
-Hardware: V9.20
-Feature(s) : GDB, RDI, FlashBP, FlashDL, JFlash 
- 
-* JLink Info: Found SWD-DP with ID 0x0BB11477
-* JLink Info: FPUnit: 4 code (BP) slots and 0 literal slots
-* JLink Info: Found Cortex-M0 r0p0, Little endian.
-ROMTableAddr = 0xE00FF003
- 
-Target info:
-------------
-Device: STM32F051R8
-VTarget = 3.293V
-State of Pins: 
-TCK: 0, TDI: 1, TDO: 0, TMS: 1, TRES: 1, TRST: 1
-Hardware-Breakpoints: 4
-Software-Breakpoints: 8192
-Watchpoints:          2
-JTAG speed: 4000 kHz
- 
-Full Chip Erase Done.
-Programming Done.
-Verify OK.
-Application running ...
 compiling adc.c...
-..\drive\adc.c(1): error:  #7: unrecognized token
-..\drive\adc.c(1): error:  #169: expected a declaration
-..\drive\adc.c(1): error:  #7: unrecognized token
-..\drive\adc.c(1): error:  #7: unrecognized token
-..\drive\adc.c(1): error:  #7: unrecognized token
-F:\Keil\ARM\Inc\ST\STM32F0xx\stm32f0xx.h(210): warning:  #12-D: parsing restarts here after previous syntax error
-F:\Keil\ARM\CMSIS\Include\core_cm0.h(515): error:  #20: identifier "IRQn_Type" is undefined
-F:\Keil\ARM\CMSIS\Include\core_cm0.h(527): error:  #20: identifier "IRQn_Type" is undefined
-F:\Keil\ARM\CMSIS\Include\core_cm0.h(543): error:  #20: identifier "IRQn_Type" is undefined
-F:\Keil\ARM\CMSIS\Include\core_cm0.h(555): error:  #20: identifier "IRQn_Type" is undefined
-F:\Keil\ARM\CMSIS\Include\core_cm0.h(567): error:  #20: identifier "IRQn_Type" is undefined
-F:\Keil\ARM\CMSIS\Include\core_cm0.h(582): error:  #20: identifier "IRQn_Type" is undefined
-F:\Keil\ARM\CMSIS\Include\core_cm0.h(604): error:  #20: identifier "IRQn_Type" is undefined
-F:\Keil\ARM\CMSIS\Include\core_cm0.h(661): error:  #20: identifier "SysTick_IRQn" is undefined
-"..\drive\adc.c" - 13 Errors, 1 Warning(s).
-compiling adc.c...
-"..\drive\adc.c" - 0 Errors, 0 Warning(s).
-Build target 'Target 1'
+compiling timer.c...
 linking...
-Program Size: Code=9592 RO-data=224 RW-data=56 ZI-data=6168  
-".\systick.axf" - 0 Errors, 0 Warning(s).
-Build target 'Target 1'
-linking...
-Program Size: Code=9592 RO-data=224 RW-data=56 ZI-data=6168  
+Program Size: Code=9588 RO-data=224 RW-data=56 ZI-data=2072  
 ".\systick.axf" - 0 Errors, 0 Warning(s).
 Load "E:\\毕业设计\\硬件模块学习(新方案)\\GITHUB\\The-new-Plan-of--graduation-project\\联调最终版\\user\\systick.axf" 
 Set JLink Project File to "E:\毕业设计\硬件模块学习(新方案)\GITHUB\The-new-Plan-of--graduation-project\联调最终版\user\JLinkSettings.ini"
@@ -254,7 +32,7 @@ ROMTableAddr = 0xE00FF003
 Target info:
 ------------
 Device: STM32F051R8
-VTarget = 3.293V
+VTarget = 3.291V
 State of Pins: 
 TCK: 0, TDI: 1, TDO: 0, TMS: 1, TRES: 1, TRST: 1
 Hardware-Breakpoints: 4
@@ -262,7 +40,330 @@ Software-Breakpoints: 8192
 Watchpoints:          2
 JTAG speed: 4000 kHz
  
-Full Chip Erase Failed!
+Full Chip Erase Done.
+Programming Done.
+Verify OK.
+Application running ...
+compiling main.c...
+main.c(79): error:  #29: expected an expression
+main.c(79): error:  #20: identifier "i" is undefined
+"main.c" - 2 Errors, 0 Warning(s).
+compiling timer.c...
+"..\drive\timer.c" - 0 Errors, 0 Warning(s).
+compiling main.c...
+"main.c" - 0 Errors, 0 Warning(s).
+Build target 'Target 1'
+linking...
+Program Size: Code=14436 RO-data=224 RW-data=68 ZI-data=3644  
+".\systick.axf" - 0 Errors, 0 Warning(s).
+Load "E:\\毕业设计\\硬件模块学习(新方案)\\GITHUB\\The-new-Plan-of--graduation-project\\联调最终版\\user\\systick.axf" 
+Set JLink Project File to "E:\毕业设计\硬件模块学习(新方案)\GITHUB\The-new-Plan-of--graduation-project\联调最终版\user\JLinkSettings.ini"
+* JLink Info: Device "STM32F051R8" selected (64 KB flash, 8 KB RAM).
+ 
+JLink info:
+------------
+DLL: V4.74b, compiled Aug 19 2013 23:26:44
+Firmware: J-Link V9 compiled Dec 19 2014 16:50:53
+Hardware: V9.20
+Feature(s) : GDB, RDI, FlashBP, FlashDL, JFlash 
+ 
+* JLink Info: Found SWD-DP with ID 0x0BB11477
+* JLink Info: FPUnit: 4 code (BP) slots and 0 literal slots
+* JLink Info: Found Cortex-M0 r0p0, Little endian.
+ROMTableAddr = 0xE00FF003
+ 
+Target info:
+------------
+Device: STM32F051R8
+VTarget = 3.287V
+State of Pins: 
+TCK: 0, TDI: 1, TDO: 0, TMS: 1, TRES: 1, TRST: 1
+Hardware-Breakpoints: 4
+Software-Breakpoints: 8192
+Watchpoints:          2
+JTAG speed: 4000 kHz
+ 
+Full Chip Erase Done.
+Programming Done.
+Verify OK.
+Application running ...
+compiling main.c...
+"main.c" - 0 Errors, 0 Warning(s).
+compiling main.c...
+"main.c" - 0 Errors, 0 Warning(s).
+Build target 'Target 1'
+linking...
+Program Size: Code=14440 RO-data=224 RW-data=68 ZI-data=3644  
+".\systick.axf" - 0 Errors, 0 Warning(s).
+Load "E:\\毕业设计\\硬件模块学习(新方案)\\GITHUB\\The-new-Plan-of--graduation-project\\联调最终版\\user\\systick.axf" 
+Set JLink Project File to "E:\毕业设计\硬件模块学习(新方案)\GITHUB\The-new-Plan-of--graduation-project\联调最终版\user\JLinkSettings.ini"
+* JLink Info: Device "STM32F051R8" selected (64 KB flash, 8 KB RAM).
+ 
+JLink info:
+------------
+DLL: V4.74b, compiled Aug 19 2013 23:26:44
+Firmware: J-Link V9 compiled Dec 19 2014 16:50:53
+Hardware: V9.20
+Feature(s) : GDB, RDI, FlashBP, FlashDL, JFlash 
+ 
+* JLink Info: Found SWD-DP with ID 0x0BB11477
+* JLink Info: FPUnit: 4 code (BP) slots and 0 literal slots
+* JLink Info: Found Cortex-M0 r0p0, Little endian.
+ROMTableAddr = 0xE00FF003
+ 
+Target info:
+------------
+Device: STM32F051R8
+VTarget = 3.290V
+State of Pins: 
+TCK: 0, TDI: 1, TDO: 0, TMS: 1, TRES: 1, TRST: 1
+Hardware-Breakpoints: 4
+Software-Breakpoints: 8192
+Watchpoints:          2
+JTAG speed: 4000 kHz
+ 
+Full Chip Erase Done.
+Programming Done.
+Verify OK.
+Application running ...
+compiling main.c...
+"main.c" - 0 Errors, 0 Warning(s).
+Build target 'Target 1'
+linking...
+Program Size: Code=14532 RO-data=224 RW-data=68 ZI-data=3644  
+".\systick.axf" - 0 Errors, 0 Warning(s).
+Load "E:\\毕业设计\\硬件模块学习(新方案)\\GITHUB\\The-new-Plan-of--graduation-project\\联调最终版\\user\\systick.axf" 
+Set JLink Project File to "E:\毕业设计\硬件模块学习(新方案)\GITHUB\The-new-Plan-of--graduation-project\联调最终版\user\JLinkSettings.ini"
+* JLink Info: Device "STM32F051R8" selected (64 KB flash, 8 KB RAM).
+ 
+JLink info:
+------------
+DLL: V4.74b, compiled Aug 19 2013 23:26:44
+Firmware: J-Link V9 compiled Dec 19 2014 16:50:53
+Hardware: V9.20
+Feature(s) : GDB, RDI, FlashBP, FlashDL, JFlash 
+ 
+* JLink Info: Found SWD-DP with ID 0x0BB11477
+* JLink Info: FPUnit: 4 code (BP) slots and 0 literal slots
+* JLink Info: Found Cortex-M0 r0p0, Little endian.
+ROMTableAddr = 0xE00FF003
+ 
+Target info:
+------------
+Device: STM32F051R8
+VTarget = 3.290V
+State of Pins: 
+TCK: 0, TDI: 1, TDO: 0, TMS: 1, TRES: 1, TRST: 1
+Hardware-Breakpoints: 4
+Software-Breakpoints: 8192
+Watchpoints:          2
+JTAG speed: 4000 kHz
+ 
+Full Chip Erase Done.
+Programming Done.
+Verify OK.
+Application running ...
+Build target 'Target 1'
+compiling main.c...
+main.c(89): error:  #65: expected a ";"
+compiling timer.c...
+".\systick.axf" - 1 Errors, 0 Warning(s).
+Target not created
+Build target 'Target 1'
+compiling main.c...
+linking...
+Program Size: Code=14532 RO-data=224 RW-data=68 ZI-data=3644  
+".\systick.axf" - 0 Errors, 0 Warning(s).
+Load "E:\\毕业设计\\硬件模块学习(新方案)\\GITHUB\\The-new-Plan-of--graduation-project\\联调最终版\\user\\systick.axf" 
+Set JLink Project File to "E:\毕业设计\硬件模块学习(新方案)\GITHUB\The-new-Plan-of--graduation-project\联调最终版\user\JLinkSettings.ini"
+* JLink Info: Device "STM32F051R8" selected (64 KB flash, 8 KB RAM).
+ 
+JLink info:
+------------
+DLL: V4.74b, compiled Aug 19 2013 23:26:44
+Firmware: J-Link V9 compiled Dec 19 2014 16:50:53
+Hardware: V9.20
+Feature(s) : GDB, RDI, FlashBP, FlashDL, JFlash 
+ 
+* JLink Info: Found SWD-DP with ID 0x0BB11477
+* JLink Info: FPUnit: 4 code (BP) slots and 0 literal slots
+* JLink Info: Found Cortex-M0 r0p0, Little endian.
+ROMTableAddr = 0xE00FF003
+ 
+Target info:
+------------
+Device: STM32F051R8
+VTarget = 3.287V
+State of Pins: 
+TCK: 0, TDI: 1, TDO: 0, TMS: 1, TRES: 1, TRST: 1
+Hardware-Breakpoints: 4
+Software-Breakpoints: 8192
+Watchpoints:          2
+JTAG speed: 4000 kHz
+ 
+Full Chip Erase Done.
+Programming Done.
+Verify OK.
+Application running ...
+Build target 'Target 1'
+compiling main.c...
+linking...
+Program Size: Code=14668 RO-data=224 RW-data=68 ZI-data=3644  
+".\systick.axf" - 0 Errors, 0 Warning(s).
+Build target 'Target 1'
+linking...
+Program Size: Code=14668 RO-data=224 RW-data=68 ZI-data=3644  
+".\systick.axf" - 0 Errors, 0 Warning(s).
+Load "E:\\毕业设计\\硬件模块学习(新方案)\\GITHUB\\The-new-Plan-of--graduation-project\\联调最终版\\user\\systick.axf" 
+Set JLink Project File to "E:\毕业设计\硬件模块学习(新方案)\GITHUB\The-new-Plan-of--graduation-project\联调最终版\user\JLinkSettings.ini"
+* JLink Info: Device "STM32F051R8" selected (64 KB flash, 8 KB RAM).
+ 
+JLink info:
+------------
+DLL: V4.74b, compiled Aug 19 2013 23:26:44
+Firmware: J-Link V9 compiled Dec 19 2014 16:50:53
+Hardware: V9.20
+Feature(s) : GDB, RDI, FlashBP, FlashDL, JFlash 
+ 
+* JLink Info: Found SWD-DP with ID 0x0BB11477
+* JLink Info: FPUnit: 4 code (BP) slots and 0 literal slots
+* JLink Info: Found Cortex-M0 r0p0, Little endian.
+ROMTableAddr = 0xE00FF003
+ 
+Target info:
+------------
+Device: STM32F051R8
+VTarget = 3.285V
+State of Pins: 
+TCK: 0, TDI: 1, TDO: 0, TMS: 1, TRES: 1, TRST: 1
+Hardware-Breakpoints: 4
+Software-Breakpoints: 8192
+Watchpoints:          2
+JTAG speed: 4000 kHz
+ 
+Full Chip Erase Done.
+Programming Done.
+Verify OK.
+Application running ...
+compiling main.c...
+"main.c" - 0 Errors, 0 Warning(s).
+compiling main.c...
+"main.c" - 0 Errors, 0 Warning(s).
+Build target 'Target 1'
+linking...
+Program Size: Code=14464 RO-data=224 RW-data=68 ZI-data=3644  
+".\systick.axf" - 0 Errors, 0 Warning(s).
+Load "E:\\毕业设计\\硬件模块学习(新方案)\\GITHUB\\The-new-Plan-of--graduation-project\\联调最终版\\user\\systick.axf" 
+Set JLink Project File to "E:\毕业设计\硬件模块学习(新方案)\GITHUB\The-new-Plan-of--graduation-project\联调最终版\user\JLinkSettings.ini"
+* JLink Info: Device "STM32F051R8" selected (64 KB flash, 8 KB RAM).
+ 
+JLink info:
+------------
+DLL: V4.74b, compiled Aug 19 2013 23:26:44
+Firmware: J-Link V9 compiled Dec 19 2014 16:50:53
+Hardware: V9.20
+Feature(s) : GDB, RDI, FlashBP, FlashDL, JFlash 
+ 
+* JLink Info: Found SWD-DP with ID 0x0BB11477
+* JLink Info: FPUnit: 4 code (BP) slots and 0 literal slots
+* JLink Info: Found Cortex-M0 r0p0, Little endian.
+ROMTableAddr = 0xE00FF003
+ 
+Target info:
+------------
+Device: STM32F051R8
+VTarget = 3.287V
+State of Pins: 
+TCK: 0, TDI: 1, TDO: 0, TMS: 1, TRES: 1, TRST: 1
+Hardware-Breakpoints: 4
+Software-Breakpoints: 8192
+Watchpoints:          2
+JTAG speed: 4000 kHz
+ 
+Full Chip Erase Done.
+Programming Done.
+Verify OK.
+Application running ...
+Load "E:\\毕业设计\\硬件模块学习(新方案)\\GITHUB\\The-new-Plan-of--graduation-project\\联调最终版\\user\\systick.axf" 
+Set JLink Project File to "E:\毕业设计\硬件模块学习(新方案)\GITHUB\The-new-Plan-of--graduation-project\联调最终版\user\JLinkSettings.ini"
+* JLink Info: Device "STM32F051R8" selected (64 KB flash, 8 KB RAM).
+ 
+JLink info:
+------------
+DLL: V4.74b, compiled Aug 19 2013 23:26:44
+Firmware: J-Link V9 compiled Dec 19 2014 16:50:53
+Hardware: V9.20
+Feature(s) : GDB, RDI, FlashBP, FlashDL, JFlash 
+ 
+* JLink Info: Found SWD-DP with ID 0x0BB11477
+* JLink Info: FPUnit: 4 code (BP) slots and 0 literal slots
+* JLink Info: Found Cortex-M0 r0p0, Little endian.
+ROMTableAddr = 0xE00FF003
+ 
+Target info:
+------------
+Device: STM32F051R8
+VTarget = 3.290V
+State of Pins: 
+TCK: 0, TDI: 1, TDO: 0, TMS: 1, TRES: 1, TRST: 1
+Hardware-Breakpoints: 4
+Software-Breakpoints: 8192
+Watchpoints:          2
+JTAG speed: 4000 kHz
+ 
+Full Chip Erase Done.
+Programming Done.
+Verify OK.
+Application running ...
+Build target 'Target 1'
+compiling main.c...
+linking...
+Program Size: Code=14668 RO-data=224 RW-data=68 ZI-data=3644  
+".\systick.axf" - 0 Errors, 0 Warning(s).
+Build target 'Target 1'
+linking...
+Program Size: Code=14668 RO-data=224 RW-data=68 ZI-data=3644  
+".\systick.axf" - 0 Errors, 0 Warning(s).
+Load "E:\\毕业设计\\硬件模块学习(新方案)\\GITHUB\\The-new-Plan-of--graduation-project\\联调最终版\\user\\systick.axf" 
+Set JLink Project File to "E:\毕业设计\硬件模块学习(新方案)\GITHUB\The-new-Plan-of--graduation-project\联调最终版\user\JLinkSettings.ini"
+* JLink Info: Device "STM32F051R8" selected (64 KB flash, 8 KB RAM).
+ 
+JLink info:
+------------
+DLL: V4.74b, compiled Aug 19 2013 23:26:44
+Firmware: J-Link V9 compiled Dec 19 2014 16:50:53
+Hardware: V9.20
+Feature(s) : GDB, RDI, FlashBP, FlashDL, JFlash 
+ 
+* JLink Info: Found SWD-DP with ID 0x0BB11477
+* JLink Info: FPUnit: 4 code (BP) slots and 0 literal slots
+* JLink Info: Found Cortex-M0 r0p0, Little endian.
+ROMTableAddr = 0xE00FF003
+ 
+Target info:
+------------
+Device: STM32F051R8
+VTarget = 3.291V
+State of Pins: 
+TCK: 0, TDI: 1, TDO: 0, TMS: 1, TRES: 1, TRST: 1
+Hardware-Breakpoints: 4
+Software-Breakpoints: 8192
+Watchpoints:          2
+JTAG speed: 4000 kHz
+ 
+Full Chip Erase Done.
+Programming Done.
+Verify OK.
+Application running ...
+Build target 'Target 1'
+compiling timer.c...
+linking...
+Program Size: Code=14696 RO-data=224 RW-data=68 ZI-data=3644  
+".\systick.axf" - 0 Errors, 0 Warning(s).
+Build target 'Target 1'
+linking...
+Program Size: Code=14696 RO-data=224 RW-data=68 ZI-data=3644  
+".\systick.axf" - 0 Errors, 0 Warning(s).
 Load "E:\\毕业设计\\硬件模块学习(新方案)\\GITHUB\\The-new-Plan-of--graduation-project\\联调最终版\\user\\systick.axf" 
 Set JLink Project File to "E:\毕业设计\硬件模块学习(新方案)\GITHUB\The-new-Plan-of--graduation-project\联调最终版\user\JLinkSettings.ini"
 * JLink Info: Device "STM32F051R8" selected (64 KB flash, 8 KB RAM).

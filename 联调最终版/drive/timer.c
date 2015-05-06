@@ -4,11 +4,16 @@
 #include "usart.h"
 #include "systick.h"
 
+#define  SW_RESET()	       NVIC_SystemReset()  
+
+
 //????AD?i???????
 uint16_t Value_temp;
 uint16_t count_1 = 0;
 uint16_t count_2 = 0;
-uint16_t ADC_Test[2560] = {0};
+//uint16_t ADC_Test[2560] = {0};
+uint16_t ADC_Test[1280] = {0};
+//uint16_t ADC_Test[512] = {0};
 
 void delay_ms(uint16_t time)
 {
@@ -69,15 +74,20 @@ void TIM3_IRQHandler(void)
 		count_1 = (Value_temp * 3300)/4096;
 		ADC_Test[count_2] = count_1;
 		count_2++;
-		if(count_2 == 2560)
+		//if(count_2 == 2560)
+		//if(count_2 == 1280)
+		if(count_2 == 1280)
 		{
 				TIM_Cmd(TIM3, DISABLE);
-				for(count_2 = 0; count_2 < 2560; count_2++)
+				//for(count_2 = 0; count_2 < 2560; count_2++)
+				//for(count_2 = 0; count_2 < 512; count_2++)
+				for(count_2 = 0; count_2 < 1280; count_2++)
 				{
 						printf("%d\n",ADC_Test[count_2]);
 						delay_ms(10);
 						//Delay_ms(500);
 				}
+				SW_RESET();
 				
 		}
 
