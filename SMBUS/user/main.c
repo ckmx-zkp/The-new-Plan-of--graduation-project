@@ -25,6 +25,7 @@ int main(void)
 		//ADC_Configuration();
 		//printf(" ADC“—≥ı ºªØ\n");
 		//TIMER_Config();
+		//Delay_ms(2000);
 		SMBus_Init();
 		printf("SMBus Success\n");
 		while(1)
