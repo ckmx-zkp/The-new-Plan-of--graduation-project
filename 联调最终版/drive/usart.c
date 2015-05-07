@@ -6,9 +6,9 @@
 #include <stdarg.h>
 #include <stdio.h>
 
-#define ADC_Con 0x20
-#define TEM_con 0x30
-
+#define 	ADC_Con 0x20
+#define 	TEM_con 0x30
+#define  	SW_RESET()	       NVIC_SystemReset()  
 extern uint16_t USART_Tem;
 
 uint8_t USART_RX_BUF[20];     //接收缓冲,最大USART_REC_LEN个字节.
@@ -133,6 +133,10 @@ void USART1_IRQHandler(void)                	//串口1中断服务程序
 										USART_RX_BUF[USART_RX_STA&0X3FFF]=Res ;
 										USART_RX_STA++;
 										USART_ClearITPendingBit(USART1, USART_IT_RXNE);
+										if(USART_RX_BUF[0] == 'R')
+										{
+												SW_RESET();
+										}
 										if(USART_RX_STA>(20-1))
 												USART_RX_STA=0;														//接收数据错误,重新开始接收	  
 								}		 
